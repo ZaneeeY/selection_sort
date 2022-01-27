@@ -11,7 +11,7 @@ def selection_sort(aList):
     Output: List of numbers sorted in ascending order
     """
     for index in range(len(aList)-1):# Traverse the list
-        minPos = index
+        minPos = index #The initial value of minPos is index
         for curPos in range(index+1,len(aList)): # Iterate through the list after index to find minimum index
             if aList[curPos] < aList[minPos]:# Compare the size of the numbers represented by minPos and curPos
                 minPos = curPos # Update new minimum index
